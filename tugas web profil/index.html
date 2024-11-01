@@ -43,6 +43,17 @@
             </div>
         </div>
     </nav>
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = '#FFD700';
+            });
+            link.addEventListener('mouseout', () => {
+                link.style.color = 'white';
+            });
+        });
+    </script>
     <div class="container" style="padding: 20px;">
     <div class="row" style="border-radius: 10px;background-image: url('https://wallpapers.com/images/hd/pastel-abstract-1920-x-1080-background-tqmyfgoeoet6h29y.jpg');
         background-size: cover; background-position: center;min-height: 600px;">
